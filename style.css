@@ -4,6 +4,8 @@
     src: url(/fonts/Avenir.ttc);
     font-family: "arsenica-trial-light";
     src: url(/fonts/ArsenicaTrial-Light.ttf);
+    font-family: "arsenica-trial-extrabold";
+    src: url(/fonts/ArsenicaTrial-Extrabold.ttf);
 }
 
 
@@ -26,6 +28,7 @@ h4 {
     font-size: 1rem;
 }
 
+
 header {
     color: var(--color-light);
     background-color: var(--color-dark);
@@ -34,12 +37,17 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    padding: 2rem;
+    padding-inline: 2rem;
+    margin-block: 1.5rem;
 
 }
 
 header > div {
     font-family: "arsenica-trial-light";
+}
+
+header > div > h4 {
+    margin: 0;
 }
 
 nav > ul {
@@ -78,25 +86,51 @@ nav > ul > li > a {
 
 }
 
+#all-events {
+    font-family: "arsenica-trial-extrabold";
+    color: var(--color-light);
+    margin-inline: 2rem;
+}
+
+
 #main-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     column-gap: 2rem;
+    margin-inline: 2rem;
     
 
 }
 
 article {
-    flex: 1;
+    width: 30%;
+    
 }
+
+
+
+article > div {
+    margin: 0;
+    padding: 0;
+}
+
+
 
 article > div > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
 
 .article-text {
     background-color: var(--color-light);
+    padding: 0.5rem;
+    
+}
+
+.article-text > h2 {
+    margin: 0;
+    padding: 0;
 }
