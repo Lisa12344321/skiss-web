@@ -97,14 +97,16 @@ nav > ul > li > a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    row-gap: 3rem;
     column-gap: 2rem;
     margin-inline: 2rem;
+    
     
 
 }
 
 article {
-    width: 30%;
+    width: 32%;
     
 }
 
@@ -124,13 +126,26 @@ article > div > img {
     
 }
 
+.article-image {
+    height: 50%;
+}
+
+
 .article-text {
     background-color: var(--color-light);
     padding: 0.5rem;
+    height: 50%;
+    padding-bottom: 0;
+    margin-bottom: 0;
     
 }
 
 .article-text > h2 {
     margin: 0;
     padding: 0;
+}
+
+
+footer {
+    background-color: var(--color-purple);
 }
