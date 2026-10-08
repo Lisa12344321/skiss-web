@@ -102,12 +102,14 @@ nav > ul > li > a {
     margin-inline: 2rem;
     
     
+    
 
 }
 
 article {
     width: 32%;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -131,6 +133,7 @@ article > div > img {
 }
 
 
+
 .article-text {
     background-color: var(--color-light);
     padding: 0.5rem;
@@ -148,4 +151,34 @@ article > div > img {
 
 footer {
     background-color: var(--color-purple);
+    display: flex;
+}
+
+.footer-ul > li > p {
+    margin: 0;
+}
+
+.footer-ul {
+    list-style: none;
+    display: flex;
+    column-gap: 2rem;
+}
+
+.footer-ul-small {
+    list-style: none;
+    display: flex;
+    column-gap: 10rem;
+    padding: 0;
+}
+
+.footer-ul-column {
+    list-style: none;
+}
+
+.footer-section {
+    width: 50%;
+}
+
+.footer-top {
+    height: 25%;
 }
