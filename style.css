@@ -33,6 +33,7 @@ h3 {
 
 h4 {
     font-size: 1rem;
+    font-weight: 500;
 }
 
 
@@ -68,7 +69,7 @@ nav > ul > li > a {
     color: var(--color-light);
     text-decoration: none;
     font-family: "avenir";
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 #about-us {
@@ -106,7 +107,6 @@ nav > ul > li > a {
 }
 
 .info-and-tickets {
-    font-size: 2rem;
     display: flex;
     
 }
@@ -119,6 +119,7 @@ nav > ul > li > a {
     text-decoration-color: var(--color-purple);
     text-decoration-thickness: 0.3rem;
     padding: 1.5rem;
+    font-size: 2rem;
 }
 
 #buy-tickets {
@@ -130,12 +131,13 @@ nav > ul > li > a {
     text-decoration-thickness: 0.3rem;
     font-weight: 600;
     padding: 1.5rem;
+    font-size: 2rem;
 }
 
 #all-events {
     font-family: "arsenica-trial-extrabold";
     color: var(--color-light);
-    margin-inline: 3rem;
+    margin-inline: 2rem;
     font-size: 2rem;
 }
 
@@ -144,19 +146,20 @@ nav > ul > li > a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    row-gap: 3rem;
+    row-gap: 2rem;
     column-gap: 2rem;
-    margin-inline: 3rem;
-    
+    margin-inline: 2rem;
+    margin-bottom: 4rem;
     
     
 
 }
 
 article {
-    width: 30%;
+    width: 32%;
     display: flex;
     flex-direction: column;
+    font-family: "avenir";
 }
 
 
@@ -170,7 +173,8 @@ article > div {
 
 article > div > img {
     width: 100%;
-    height: 100%;
+    height: 352px;
+    max-height: 352px;
     object-fit: cover;
     
 }
@@ -183,17 +187,52 @@ article > div > img {
 
 .article-text {
     background-color: var(--color-light);
-    padding: 0.5rem;
     height: 50%;
     padding-bottom: 0;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
 
-.article-text > h2 {
-    margin: 0;
-    padding: 0;
+
+.name-date {
+    padding-inline: 1rem;
 }
+
+.name-date > h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.name-date > h4 {
+    margin: 0;
+}
+
+.more-info {
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+    color: var(--color-dark);
+    text-decoration-color: var(--color-purple);
+    text-decoration-thickness: 0.3rem;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.buy-tickets {
+    width: 50%;
+    text-align: center;
+    background-color: var(--color-purple);
+    color: var(--color-light);
+    text-decoration-color: var(--color-light);
+    text-decoration-thickness: 0.3rem;
+    font-weight: 600;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+}
+
 
 
 footer {
