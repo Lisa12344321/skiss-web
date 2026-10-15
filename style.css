@@ -76,6 +76,7 @@ nav > ul > li > a {
     text-decoration: underline;
     text-decoration-color: var(--color-purple);
     text-decoration-thickness: 0.1rem;
+    text-underline-offset: 3px;
 }
 
 #hero {
@@ -118,6 +119,7 @@ nav > ul > li > a {
     color: var(--color-dark);
     text-decoration-color: var(--color-purple);
     text-decoration-thickness: 0.3rem;
+    text-underline-offset: 10px;
     padding: 1.5rem;
     font-size: 2rem;
 }
@@ -130,6 +132,7 @@ nav > ul > li > a {
     text-decoration-color: var(--color-light);
     text-decoration-thickness: 0.3rem;
     font-weight: 600;
+    text-underline-offset: 10px;
     padding: 1.5rem;
     font-size: 2rem;
 }
@@ -187,6 +190,7 @@ article > div > img {
 
 .article-text {
     background-color: var(--color-light);
+    color: var(--color-dark);
     height: 50%;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -217,6 +221,7 @@ article > div > img {
     color: var(--color-dark);
     text-decoration-color: var(--color-purple);
     text-decoration-thickness: 0.3rem;
+    text-underline-offset: 6px;
     padding: 1.5rem;
     font-size: 1.3rem;
 }
@@ -228,6 +233,7 @@ article > div > img {
     color: var(--color-light);
     text-decoration-color: var(--color-light);
     text-decoration-thickness: 0.3rem;
+    text-underline-offset: 6px;
     font-weight: 600;
     padding: 1.5rem;
     font-size: 1.3rem;
@@ -236,8 +242,14 @@ article > div > img {
 
 
 footer {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     background-color: var(--color-purple);
     display: flex;
+    font-family: "avenir";
+    font-weight: 600;
+    color: var(--color-dark);
+    font-size: 1.3rem;
 }
 
 .footer-ul > li > p {
@@ -247,13 +259,13 @@ footer {
 .footer-ul {
     list-style: none;
     display: flex;
-    column-gap: 2rem;
+    column-gap: 0.5rem;
 }
 
 .footer-ul-small {
     list-style: none;
     display: flex;
-    column-gap: 10rem;
+    column-gap: 40%;
     padding: 0;
 }
 
@@ -267,4 +279,46 @@ footer {
 
 .footer-top {
     height: 25%;
+}
+
+.footer-top > h4 {
+    color: var(--color-light);
+    font-family: "arsenica-trial-light";
+    font-size: 1.5rem;
+}
+
+#liten-umeyou-logga {
+    max-width: 70%;
+}
+
+#news > p {
+    margin: 0;
+}
+
+#get-news {
+    font-weight: 500;
+}
+
+#email-subscribe {
+    list-style: none;
+    padding-inline: 0;
+    display: flex;
+    column-gap: 2rem;
+}
+
+#email-box {
+    background-color: var(--color-light);
+    color: var(--color-purple);
+    padding: 0.5rem;
+    width: 50%;
+}
+
+#subscribe {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 0.5rem;
+    width: 20%;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
