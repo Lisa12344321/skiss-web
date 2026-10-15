@@ -22,6 +22,8 @@ html, body {
 
 h1 {
     font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
 h3 {
@@ -118,10 +120,10 @@ nav > ul > li > a {
     font-weight: 600;
     color: var(--color-dark);
     text-decoration-color: var(--color-purple);
-    text-decoration-thickness: 0.3rem;
+    text-decoration-thickness: 0.2rem;
     text-underline-offset: 10px;
     padding: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 #buy-tickets {
@@ -130,11 +132,11 @@ nav > ul > li > a {
     background-color: var(--color-purple);
     color: var(--color-light);
     text-decoration-color: var(--color-light);
-    text-decoration-thickness: 0.3rem;
+    text-decoration-thickness: 0.2rem;
     font-weight: 600;
     text-underline-offset: 10px;
     padding: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 #all-events {
@@ -207,6 +209,7 @@ article > div > img {
 
 .name-date > h2 {
     font-size: 2rem;
+    margin-top: 0.7rem;
     margin-bottom: 0.5rem;
 }
 
@@ -220,7 +223,7 @@ article > div > img {
     font-weight: 600;
     color: var(--color-dark);
     text-decoration-color: var(--color-purple);
-    text-decoration-thickness: 0.3rem;
+    text-decoration-thickness: 0.2rem;
     text-underline-offset: 6px;
     padding: 1.5rem;
     font-size: 1.3rem;
@@ -232,7 +235,7 @@ article > div > img {
     background-color: var(--color-purple);
     color: var(--color-light);
     text-decoration-color: var(--color-light);
-    text-decoration-thickness: 0.3rem;
+    text-decoration-thickness: 0.2rem;
     text-underline-offset: 6px;
     font-weight: 600;
     padding: 1.5rem;
@@ -259,8 +262,16 @@ footer {
 .footer-ul {
     list-style: none;
     display: flex;
-    column-gap: 0.5rem;
+    align-items: center;
 }
+
+.footer-icons {
+    list-style: none;
+    display: flex;
+    column-gap: 2rem;
+}
+
+
 
 .footer-ul-small {
     list-style: none;
@@ -303,7 +314,8 @@ footer {
     list-style: none;
     padding-inline: 0;
     display: flex;
-    column-gap: 2rem;
+    column-gap: 5rem;
+    
 }
 
 #email-box {
@@ -315,10 +327,14 @@ footer {
 
 #subscribe {
     background-color: var(--color-dark);
-    color: var(--color-light);
+    
     padding: 0.5rem;
     width: 20%;
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 4px;
+}
+
+#subscribe > a {
+    color: var(--color-light);
 }
